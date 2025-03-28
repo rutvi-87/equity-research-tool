@@ -5,4 +5,5 @@ tesseract-ocr
 build-essential
 libssl-dev
 libffi-dev
+python3.10
 
