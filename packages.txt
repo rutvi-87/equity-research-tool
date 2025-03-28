@@ -2,3 +2,7 @@ libopenblas-dev
 libomp-dev
 poppler-utils
 tesseract-ocr
+build-essential
+libssl-dev
+libffi-dev
+
