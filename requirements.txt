@@ -9,7 +9,5 @@ sentence-transformers==2.2.2
 cohere==4.27
 beautifulsoup4==4.12.2
 requests==2.31.0
-pip==25.0.1
-setuptools>=68.0.0
-wheel
+
 
