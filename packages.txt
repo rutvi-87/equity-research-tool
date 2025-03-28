@@ -1,0 +1,4 @@
+libopenblas-dev
+libomp-dev
+poppler-utils
+tesseract-ocr
