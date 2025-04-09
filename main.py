@@ -10,14 +10,15 @@ from sentence_transformers import SentenceTransformer
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.docstore.document import Document
 import cohere  # Cohere API
+import os
+os.environ["HF_HUB_OFFLINE"] = "1"
 
 # Cohere API key
 COHERE_API_KEY = "r9KRHcB0jl3ryx4AhfBvZhilggmHGlsCHv6zSjsS"  # Replace with your actual Cohere API key
 co = cohere.Client(COHERE_API_KEY)  # Initialize Cohere client
 
 # Load the SentenceTransformer model globally
-from sentence_transformers import SentenceTransformer
-model = SentenceTransformer('./local_model', local_files_only=True)
+model = SentenceTransformer('./local_model')
   # Hugging Face transformer model for embeddings
 
 # Streamlit app interface with improved styling
