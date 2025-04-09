@@ -18,7 +18,8 @@ COHERE_API_KEY = "r9KRHcB0jl3ryx4AhfBvZhilggmHGlsCHv6zSjsS"  # Replace with your
 co = cohere.Client(COHERE_API_KEY)  # Initialize Cohere client
 
 # Load the SentenceTransformer model globally
-model = SentenceTransformer('./local_model')
+model_name = 'sentence-transformers/all-MiniLM-L6-v2'  # Updated model path
+model = SentenceTransformer(model_name)
   # Hugging Face transformer model for embeddings
 
 # Streamlit app interface with improved styling
